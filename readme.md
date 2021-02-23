@@ -253,3 +253,25 @@ const cors = require('cors')
 
 app.use(cors())
 ```
+
+## Deploy with heroku
+
+- Install the Heroku CLI
+- Download and install the Heroku CLI.
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+Clone the repository
+Use Git to clone node101-ejbcode's source code to your local machine.
+
+$ heroku git:clone -a node101-ejbcode
+$ cd node101-ejbcode
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+$ git push heroku master
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+heroku.com
+
+Now you have your node app
+['https://node101-ejbcode.herokuapp.com/api/todos'](https://node101-ejbcode.herokuapp.com/api/todos)
